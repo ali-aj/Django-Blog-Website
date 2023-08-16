@@ -1,0 +1,172 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+  </head>
+  <body>
+    {% include 'header.html' %} {% comment %}
+    <h2 class="d-flex justify-content-center align-items-center my-3">About</h2>
+    {% endcomment %}
+
+    <div class="container mx-0">
+      <div class="row">
+        <div class="col-3 px-0">
+          <nav
+            id="navbar-example3"
+            class="h-100 flex-column align-items-stretch pe-4 border-end bg-dark"
+          >
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" style="color: white" href="#item-1"
+                >About Us</a
+              >
+              <a class="nav-link" style="color: white" href="#item-2"
+                >Our Mission</a
+              >
+              <a class="nav-link" style="color: white" href="#item-3"
+                >Why Choose Us</a
+              >
+              <nav class="nav nav-pills flex-column">
+                <a
+                  class="nav-link ms-3 my-1"
+                  style="color: white"
+                  href="#item-3-1"
+                  >Quality Content</a
+                >
+                <a
+                  class="nav-link ms-3 my-1"
+                  style="color: white"
+                  href="#item-3-2"
+                  >Diverse Perspectives</a
+                >
+                <a
+                  class="nav-link ms-3 my-1"
+                  href="#item-3-3"
+                  style="color: white"
+                  >User Engagement</a
+                >
+                <a
+                  class="nav-link ms-3 my-1"
+                  style="color: white"
+                  href="#item-3-4"
+                  >Constant Evolution</a
+                >
+              </nav>
+              <a class="nav-link" href="#item-3" style="color: white"
+                >What We Offer</a
+              >
+              <a class="nav-link" href="#item-3" style="color: white"
+                >Join Our Journey</a
+              >
+            </nav>
+          </nav>
+        </div>
+
+        <div class="col-9 my-4 px-4">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example-2"
+            tabindex="0"
+          >
+            <div id="item-1">
+              <h4>About Us</h4>
+              <p>
+                Welcome to our blog website! We are passionate about sharing
+                knowledge, insights, and stories that inspire, entertain, and
+                inform our readers. Whether you are an avid reader, a curious
+                explorer, or someone seeking valuable information, our blog is a
+                hub of diverse content designed to cater to a wide range of
+                interests.
+              </p>
+            </div>
+            <div id="item-2">
+              <h4>Our Mission</h4>
+              <p>
+                Our mission is to create a platform that fosters creativity,
+                fosters learning, and encourages meaningful discussions. Through
+                our carefully curated articles, we aim to spark curiosity,
+                encourage critical thinking, and provide a fresh perspective on
+                various subjects. We believe that knowledge should be accessible
+                to all, and our commitment to inclusivity is reflected in the
+                diverse topics we cover.
+              </p>
+            </div>
+            <div id="item-3">
+              <h4>Why Choose Us</h4>
+              <p>Choose us for the following reasons:</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Quality Content</h5>
+              <p>
+                We take pride in delivering high-quality content that is both
+                informative and entertaining.
+              </p>
+            </div>
+            <div id="item-3-2">
+              <h5>Diverse Perspectives</h5>
+              <p>
+                Our team consists of individuals from different backgrounds,
+                ensuring a rich tapestry of perspectives.
+              </p>
+            </div>
+            <div id="item-3-3">
+              <h5>User Engagement</h5>
+              <p>
+                We encourage open discussions and active participation,
+                fostering a vibrant community of like-minded individuals.
+              </p>
+            </div>
+            <div id="item-3-4">
+              <h5>Constant Evolution</h5>
+              <p>
+                We are always striving to improve and adapt to our readers'
+                preferences and interests.
+              </p>
+            </div>
+            <div id="item-4">
+              <h4>What We Offer</h4>
+              <p>
+                Our blog covers a vast array of topics, from technology and
+                science to arts, culture, and lifestyle. Our team of dedicated
+                writers and contributors strives to deliver engaging and
+                well-researched content that resonates with our readers. We
+                value authentic storytelling, data-driven insights, and
+                thought-provoking opinions that challenge conventional thinking.
+              </p>
+            </div>
+            <div id="item-5">
+              <h4>Join Our Journey</h4>
+              <p>
+                We invite you to join our community of passionate readers,
+                contributors, and thought leaders. Subscribe to our newsletter
+                to stay updated with the latest articles and exciting
+                announcements. Whether you're a seasoned reader or a first-time
+                visitor, we hope our blog becomes your go-to destination for
+                inspiration, learning, and the joy of reading. Thank you for
+                being a part of our journey! -The Blog Spot Team
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Home</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    </head>
+    <body>
+        {% include 'header.html' %}
+
+        <h2 class="d-flex justify-content-center align-items-center my-3">Create Blog</h2>
+
+        <form action="/create/" method="POST" enctype="multipart/form-data">
+            {% csrf_token %} {{ form.as_p }}
+            <div class="input-group mb-3">
+                <div class="form-floating mx-5 my-2">
+                    <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Give a breif title" name="title" required />
+                    <label for="floatingInputGroup1">Title</label>
+                </div>
+            </div>
+
+            <div class="form-floating mx-5">
+                <textarea
+                    class="form-control"
+                    placeholder="Give a breif description"
+                    id="floatingTextarea2"
+                    style="min-height: 300px; max-height: 300px"
+                    name="description"
+                    required
+                ></textarea>
+                <label for="floatingTextarea2">Description</label>
+            </div>
+
+            <div class="images-section d-flex justify-content-center align-items-center">
+                <div class="mb-3 mx-5">
+                    <label for="formFile" class="form-label d-flex justify-content-center align-items-center">Cover Photo</label>
+                    <div class="supporting-images d-flex">
+                        <input class="form-control image-input" type="file" name="image1" required />
+                        <button type="button" class="btn btn-danger delete-image" style="display: none">&times;</button>
+                    </div>
+                </div>
+                <div class="mb-3 mx-5">
+                    <label for="formFile" class="form-label d-flex justify-content-center align-items-center">Supporting Image 1 (Optional)</label>
+                    <div class="image1 d-flex">
+                        <input class="form-control image-input" type="file" id="formFile" name="image2" />
+                        <button type="button" class="btn btn-danger delete-image" style="display: none">&times;</button>
+                    </div>
+                </div>
+                <div class="mb-3 mx-5">
+                    <label for="formFile" class="form-label d-flex justify-content-center align-items-center">Supporting Image 2 (Optional)</label>
+                    <div class="image2 d-flex">
+                        <input class="form-control image-input" type="file" id="formFile" name="image3" />
+                        <button type="button" class="btn btn-danger delete-image" style="display: none">&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto my-3">
+                <button class="btn btn-dark" type="submit">Save & Continue</button>
+            </div>
+        </form>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const imageInputs = document.querySelectorAll(".image-input");
+                const deleteButtons = document.querySelectorAll(".delete-image");
+
+                for (let i = 0; i < imageInputs.length; i++) {
+                    imageInputs[i].addEventListener("change", function () {
+                        if (this.files.length > 0) {
+                            deleteButtons[i].style.display = "block";
+                        } else {
+                            deleteButtons[i].style.display = "none";
+                        }
+                    });
+
+                    deleteButtons[i].addEventListener("click", function () {
+                        imageInputs[i].value = ""; // Clear the input value
+                        this.style.display = "none"; // Hide the delete button
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

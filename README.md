@@ -16,27 +16,37 @@ Welcome to the Django Blog Website repository! This project is a fully functiona
 
 1. Clone the repository to your local machine:
 
-   git clone https://github.com/ali-aj/Django-Blog-Website
+   ```
+   git clone https://github.com/your-username/django-blog-website.git
+   ```
 
 2. Create a virtual environment and activate it:
 
+   ```
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-3. Set up the database:
+4. Set up the database:
 
+   ```
    python manage.py makemigrations
    python manage.py migrate
+   ```
 
-4. Create a superuser account to access the admin panel:
+5. Create a superuser account to access the admin panel:
 
+   ```
    python manage.py createsuperuser
+   ```
 
-5. Start the development server:
+6. Start the development server:
 
+   ```
    python manage.py runserver
+   ```
 
-6. Access the website in your browser at `http://127.0.0.1:8000/` and the admin panel at `http://127.0.0.1:8000/admin/`.
+7. Access the website in your browser at `http://127.0.0.1:8000/` and the admin panel at `http://127.0.0.1:8000/admin/`.
 
 # Usage
 

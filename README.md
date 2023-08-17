@@ -40,6 +40,13 @@ Welcome to the Django Blog Website repository! This project is a fully functiona
    python manage.py createsuperuser
    ```
 
+6. Install Required dependencies:
+
+   ```
+   pip install pyotp
+   pip install email-validator
+   ```
+
 6. Start the development server:
 
    ```

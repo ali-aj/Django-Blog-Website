@@ -17,7 +17,7 @@ Welcome to the Django Blog Website repository! This project is a fully functiona
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/django-blog-website.git
+   git clone https://github.com/ali-aj/Django-Blog-Website.git
    ```
 
 2. Create a virtual environment and activate it:

@@ -43,8 +43,7 @@ Welcome to the Django Blog Website repository! This project is a fully functiona
 6. Install Required dependencies:
 
    ```
-   pip install pyotp
-   pip install email-validator
+   pip install -r requirements.txt
    ```
 
 6. Start the development server:

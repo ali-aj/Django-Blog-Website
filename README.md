@@ -1,8 +1,8 @@
-# Django-Blog-Website
+# Django Blog Website
 
 Welcome to the Django Blog Website repository! This project is a fully functional blog website developed using the Django framework. It allows users to create, read, and delete blog posts. Whether you're looking to showcase your writing skills or create a platform for sharing your thoughts, this project provides a solid foundation to get you started.
 
-# Features
+## Features
 
 - User Authentication: Users can register, log in, and manage their own blog posts.
 - Forget Password System (OTP): Forgot your password? No worries! OTP system guarantees a seamless and secure password recovery process.
@@ -12,7 +12,7 @@ Welcome to the Django Blog Website repository! This project is a fully functiona
 - Admin Panel: Admins can manage users, and posts through the Django admin panel.
 - Stay Connected: The "Contact Us" system ensures you're just a click away from reaching out, providing a direct line of communication.
 
-# Installation
+## Installation
 
 1. Clone the repository to your local machine:
 
@@ -54,14 +54,14 @@ Welcome to the Django Blog Website repository! This project is a fully functiona
 
 7. Access the website in your browser at `http://127.0.0.1:8000/` and the admin panel at `http://127.0.0.1:8000/admin/`.
 
-# Usage
+## Usage
 
 - Visit the home page to view the list of published blog posts.
 - Register or log in to manage your own blog posts.
 - Admins can log in to the admin panel to manage various aspects of the website.
 - Visit the My Blogs page to view your blogs or delete your blogs.
 
-# Contributing
+## Contributing
 
 Contributions are welcome and encouraged! If you have any improvements or bug fixes to propose, please follow these steps:
 
@@ -69,7 +69,7 @@ Contributions are welcome and encouraged! If you have any improvements or bug fi
 2. Make your changes and test them thoroughly.
 3. Create a pull request with a clear description of your changes.
 
-# Credits
+## Credits
 
 This project was developed by Muhammad Ali Mustafa and is inspired by the Django web framework. Feel free to modify, distribute, and use this project as you see fit.
 
